@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardPicker"
+    android:orientation="vertical"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_show_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show_menu"
+            android:textColor="@color/colorCardHidden"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_show_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:contentDescription="@string/show_menu"
+            android:rotation="0"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:srcCompat="@android:drawable/ic_media_rew" />
+
+        <TextView
+            android:id="@+id/tv_reset_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset"
+            android:textColor="@color/colorCardHidden"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/ib_reset_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_popup_sync"
+            android:contentDescription="@string/reset" />
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:textColor="@color/colorCardHidden"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:rotation="270"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:visibility="visible"
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:contentDescription="@string/back" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_1"/>
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_2"/>
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_3"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_4"/>
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_5"/>
+
+            <include layout="@layout/button_template"
+                android:id="@+id/bt_card_6"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Track Picker</string>
+    <string name="card_hidden">\?</string>
+    <string name="show_menu">Show menu</string>
+    <string name="hide_menu">Hide menu</string>
+    <string name="reset">Reset</string>
+    <string name="back">Back</string>
+    <string name="confirm_button">CONFIRM</string>
+    <string name="init_track_count">2</string>
+</resources>
