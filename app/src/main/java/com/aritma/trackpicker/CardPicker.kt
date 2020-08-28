@@ -38,8 +38,17 @@ class CardPicker : AppCompatActivity() {
         }
 
 
-        fun setCardWidth() {
-            val cardWidth = (this.resources.displayMetrics.widthPixels*0.3).toInt()
+        fun setCardSize() {
+            val sideRatio = 1.4
+            val multiplier = when (trackNum) {
+                0 -> 0.4
+                1 -> 0.4
+                2 -> 0.4
+                3 -> 0.3
+                4 -> 0.3
+                else -> 0.3
+            }
+            val cardWidth = (this.resources.displayMetrics.widthPixels*multiplier).toInt()
 
             arrayOf(
                 bt_card_1,
@@ -50,6 +59,7 @@ class CardPicker : AppCompatActivity() {
                 bt_card_6
             ).iterator().forEach {
                 it.layoutParams.width = cardWidth
+                it.layoutParams.height = (cardWidth*sideRatio).toInt()
             }
 
         }
@@ -82,15 +92,6 @@ class CardPicker : AppCompatActivity() {
         }
 
 
-        fun toggleCard(card: Button) {
-            val num = trackList.removeAt(0)
-
-            card.background = ContextCompat.getDrawable(this, R.color.colorCardPicked)
-            card.text = num.toString()
-            card.isClickable = false
-        }
-
-
         fun resetCards() {
             arrayOf(
                 bt_card_1 as Button,
@@ -110,7 +111,16 @@ class CardPicker : AppCompatActivity() {
         }
 
 
-        setCardWidth()
+        fun toggleCard(card: Button) {
+            val num = trackList.removeAt(0)
+
+            card.background = ContextCompat.getDrawable(this, R.color.colorCardPicked)
+            card.text = num.toString()
+            card.isClickable = false
+        }
+
+
+        setCardSize()
         setCardVisibility()
         resetCards()
         toggleMenu()
