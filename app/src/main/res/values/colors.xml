@@ -3,6 +3,8 @@
     <color name="colorPrimary">#0A0A0A</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#0F0F0F0F</color>
-    <color name="colorCardHidden">#969696</color>
-    <color name="colorCardPicked">#D0D0D0</color>
+    <color name="colorCardHidden">#FFBC17</color>
+    <color name="colorCardPicked">#FFFFFF</color>
+    <color name="colorMenuText">#FFBC17</color>
+    <color name="colorMainScreenCard">#FFBC17</color>
 </resources>

@@ -22,12 +22,12 @@
         android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/card_view_width"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:background="@android:color/white"
         android:padding="5dp"
-        app:cardBackgroundColor="#C9D3D6"
+        app:cardBackgroundColor="@color/colorMainScreenCard"
         app:cardCornerRadius="5dp"
         app:cardElevation="5dp">
 
@@ -56,9 +56,8 @@
                 android:layout_marginBottom="80dp"
                 android:max="4"
                 android:progress="0"
-                android:thumb="@android:drawable/radiobutton_off_background"
-                app:tickMarkTint="#000000"
-                app:tickMarkTintMode="multiply" />
+                android:thumb="@android:drawable/radiobutton_on_background"
+                android:tickMark="@android:drawable/radiobutton_off_background" />
 
             <Button
                 android:id="@+id/bt_confirm"

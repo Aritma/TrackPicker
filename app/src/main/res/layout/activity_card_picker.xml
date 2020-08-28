@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/show_menu"
-            android:textColor="@color/colorCardHidden"
+            android:textColor="@color/colorMenuText"
             android:gravity="center"
             android:layout_marginEnd="10dp"/>
 
@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/reset"
-            android:textColor="@color/colorCardHidden"
+            android:textColor="@color/colorMenuText"
             android:gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="10dp"
@@ -61,7 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/back"
-            android:textColor="@color/colorCardHidden"
+            android:textColor="@color/colorMenuText"
             android:gravity="center"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="10dp"
