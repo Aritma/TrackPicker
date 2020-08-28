@@ -13,4 +13,4 @@
     android:clickable="true"
     android:focusable="true"
     android:paddingHorizontal="1dp"
-    android:paddingVertical="30dp"/>
+    android:paddingVertical="1dp"/>
